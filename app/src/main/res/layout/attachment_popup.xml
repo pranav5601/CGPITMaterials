@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/popup"
+    android:paddingVertical="20dp">
+
+    <ImageView
+        android:id="@+id/attach_imae"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:src="@drawable/attach_image"
+        android:layout_marginLeft="50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/attach_imae"
+        android:layout_alignRight="@id/attach_imae"
+        android:layout_below="@id/attach_imae"
+        android:gravity="center"
+        android:text="Image"
+        android:textColor="#0000ff" />
+
+    <ImageView
+        android:id="@+id/attach_document"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_toEndOf="@id/attach_imae"
+        android:layout_toRightOf="@id/attach_imae"
+        android:src="@drawable/attach_document"
+        android:layout_marginRight="50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/attach_document"
+        android:layout_alignRight="@id/attach_document"
+        android:layout_below="@id/attach_document"
+        android:gravity="center"
+        android:text="Document"
+        android:textColor="#0000ff" />
+
+
+</RelativeLayout>
